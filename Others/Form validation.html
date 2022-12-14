@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>forms Validation</title>
+        <style>
+            label {
+                width: 100px;
+                display:inline-block ;
+            
+            }
+            input{
+                display:inline-block ;
+            }
+            form{
+                border-radius: 10px;
+                background: rgb(19, 49, 49);opacity: 0.8;
+                color: white;
+                width: 500px;
+                text-align: center;
+                margin-left: 500px;
+                padding-top: 3%;
+                padding-bottom: 2%;
+                }
+            </style>
+    </head>
+        <body>
+        <form>
+    <label>User Name* </label>
+    <input type="text" placeholder="text" required /><br/>
+    <label>Email* </label>
+    <input type="email" placeholder="email" disabled/><br/>
+    <label>phone* </label>
+    <input type="number" placeholder="10 Digit number" required /><br/>
+    <label>Subject* </label>
+    <input type="text" placeholder="Sub" required /><br/>
+    <label>Services* </label><select type="dropdown" placeholder="So and so" required>
+        <option>Dowloads</option>
+        <option>Spareparts</option>
+        <option>Changing Panel</option>
+        <option>Repalcement</option>
+    </select><br/>
+        <label>Message* </label>
+    <textarea cols="40" rows="5" required placeholder="give description"></textarea>
+    <label>Amount* </label>
+    <input type="number" placeholder="Amount" required min="500" max="1000" /><br/>
+    <input type="submit" value="Regisration">
+</form>
+</body>
+</htm>
+
+
